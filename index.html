@@ -7,13 +7,71 @@
     <title>Nam Nguyen's links</title>
 
     <style>
+        /*
         * {
             border: 1px red dashed;
         }
+        */
+
+        html {
+            min-height: 100%;
+        }
+
+        .main-container{
+            max-width: 640px;
+            margin: auto;
+        }
 
         body {
+            color: rgba(245,245,245,1);
+            min-height: 100%;
             padding-top: 40px;
             padding-bottom: 40px;
+            background: linear-gradient(165deg, #142850, #143862, #134e75, #116989, #0e8b9e, #09b5b4, #04ccb1); /* made at https://learnui.design/tools/gradient-generator.html */
+            font-family: "Raleway"
+        }
+
+        a {
+            color: rgba(245,245,245,1);
+            text-decoration: none;
+        }
+
+        .image-row {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .name-row {
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: "Playfair Display";
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+        .subtitle-row {
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: "Raleway"
+            font-size:20px;
+            font-weight: 500;
+        }
+
+        .social-icons-row {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .item {
+            background-color: rgba(67,203,184, 0.5);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 1000px;
+            padding: 5px;
+            padding-right: 53px;
+            box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
         }
 
         .avatar-image {
@@ -30,7 +88,23 @@
             object-fit: cover;
             border-radius: 48px;
         }
+
+        .link-text {
+            text-align: center;
+            flex-grow: 1;
+        }
     </style>
+
+    <!--Google Fonts-->>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+
+
 </head>
 <body>
     
@@ -40,46 +114,50 @@
         </div>
 
         <div class="name-row">
-            Nam Nguyen
+            Nam Nguyen     
         </div>
+
+        <div class="subtitle-row">
+            Chicago Booth MBA | Investment Analyst | Fintech PM | BCG
+        </div>  
 
         <div class="social-icons-row">
             <a href="https://www.linkedin.com/in/namhoangnguyen1/" target="_blank">
-                Linkedin
+                <i class="fa-brands fa-linkedin"></i> Linkedin
             </a>
 
             <a href="https://x.com/Nammiee19" target="_blank">
-                Twitter
+                <i class="fa-brands fa-x-twitter"></i> Twitter
             </a>
 
             <a href="https://github.com/nam-nguyen-1993" target="_blank">
-                Github
+                <i class="fa-brands fa-square-github"></i> Github
             </a>
 
             <a href="https://www.instagram.com/goldnano/" target="_blank">
-                Instagram
+                <i class="fa-brands fa-instagram"></i> Instagram
             </a>
         </div>
 
         <div class="links-row">
             <div class="item">
-                <img class="thumbnail" src="/marc-kleen-jz34K6k_8-E-unsplash.jpg" alt="Random image">
-                <a target="_blank" href="http://paulgraham.com/startupideas.html">
-                    How to Get Startup Ideas
+                <img class="thumbnail" src="/light-bulb.avif" alt="Random image">
+                <a class="link-text" target="_blank" href="https://patrickcollison.com/progress">
+                    Patrick Collison on Progress
+                </a>
+            </div>
+
+            <div class="item">
+                <img class="thumbnail" src="/forest-light.avif" alt="Random image">
+                <a class="link-text" href="https://www.lesswrong.com/highlights" target="_blank">
+                    Less Wrong Highlights
                 </a>
             </div>
 
             <div class="item">
                 <img class="thumbnail" src="/marc-kleen-jz34K6k_8-E-unsplash.jpg" alt="Random image">
-                <a href="https://www.ft.com/" target="_blank">
-                    Financial Times
-                </a>
-            </div>
-
-            <div class="item">
-                <img class="thumbnail" src="/marc-kleen-jz34K6k_8-E-unsplash.jpg" alt="Random image">
-                <a href="https://substack.com/home" target="_blank">
-                    Substack
+                <a class="link-text" href="https://www.dwarkeshpatel.com/podcast" target="_blank">
+                    Dwarkesh Patel's Podcasts
                 </a>
             </div>
 
